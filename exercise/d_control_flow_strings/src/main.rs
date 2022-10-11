@@ -27,7 +27,6 @@ fn main() {
         // - If arg is "double", then call the double() function
         // - If arg is anything else, then call the count() function, passing "arg" to it.
 
-
         // 1b. Now try passing "sum", "double" and "bananas" to the program by adding your argument
         // after "cargo run".  For example "cargo run sum"
     }
@@ -57,7 +56,10 @@ fn double() {
         count += 1;
     }
 
-    println!("You can double x {} times until x is larger than 500", count);
+    println!(
+        "You can double x {} times until x is larger than 500",
+        count
+    );
 }
 
 fn count(arg: String) {
@@ -70,9 +72,10 @@ fn count(arg: String) {
     loop {
         println!("{}", arg);
         i += 1;
-        if i >= 8 { break }
+        if i >= 8 {
+            break;
+        }
     }
-
 
     println!(); // This will output just a newline at the end for cleanliness.
 }
