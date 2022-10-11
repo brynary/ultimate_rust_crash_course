@@ -29,7 +29,7 @@ fn main() {
     // join handle in a variable called `handle`. Once you've done this you should be able to run
     // the code and see the Child thread output in the middle of the main thread's letters
     //
-    let handle = thread::spawn(|| expensive_sum(my_vector));
+    let handle = thread::spawn(move || expensive_sum(my_vector));
 
     // While the child thread is running, the main thread will also do some work
     for letter in vec!["a", "b", "c", "d", "e", "f"] {
