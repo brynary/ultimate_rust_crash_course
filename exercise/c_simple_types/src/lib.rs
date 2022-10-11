@@ -25,6 +25,6 @@ pub fn print_distance((x, y): (f32, f32)) {
     // body to use x and y.
     println!(
         "Distance to the origin is {}",
-        ( x.powf(2.0) + y.powf(2.0) ).sqrt());
+        (x.powf(2.0) + y.powf(2.0)).sqrt()
+    );
 }
-
